@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Carga e Imagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+        img {
+            max-width: 10%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+
+    <h1>Testando Carga e Imagens</h1>
+    <p>Abaixo você vai ver uma imagem que está na mesma pasta.</p>
+    <img src="img/img html.png" alt="Logo do HTML5">
+
+    <h2>CSS</h2>
+    <p>Podemos também carregar imagens que estão em sub-pastas.</p>
+    <img src="img/img css.png" alt="Logo do CSS">
+
+    <h2>JavaScript</h2>
+    <p>Também podemos carregar imagens externas.</p>
+    <img src="img/img js.png" alt="Logo do JavaScript">
+
+    <h2>Principais Formatações</h2>
+    <p>
+        <b>Negrito / Destaque:</b><br>
+        Nesta frase temos um <b>termo em negrito</b> (não semântica).<br>
+        Nesta frase, tenho um <strong>termo em destaque</strong> (semântica).
+    </p>
+
+    <p>
+        <b>Itálico / Ênfase:</b><br>
+        Nesta frase, temos um <i>termo em itálico</i> (não semântica).<br>
+        Nesta frase, temos um <em>termo em ênfase</em> (semântica).
+    </p>
+
+    <h2>Texto Marcado</h2>
+    <p>
+        Podemos criar também um <mark>texto marcado</mark> usando a tag <code>&lt;mark&gt;</code>.
+    </p>
+    <p>
+        E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.
+    </p>
+
+    <h2>Texto Grande e Pequeno</h2>
+    <p>
+        Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.
+    </p>
+
+    <h2>Texto Deletado</h2>
+    <p>
+        Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.
+    </p>
+
+    <h2>Texto Inserido</h2>
+    <p>
+        Podemos marcar um <ins>texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.
+    </p>
+    <p>
+        Existe também o <u>sublinhado</u> com a tag <code>&lt;u&gt;</code>.
+    </p>
+
+    <h2>Texto Sobrescrito</h2>
+    <p>
+        Para inserir coisas do tipo <sup>x²</sup> (sobrescrito).
+    </p>
+
+    <h2>Texto Subscrito</h2>
+    <p>
+        Para inserir coisas do tipo <sub>H₂O</sub> (subscrito).
+    </p>
+
+    <h2>Trabalhando com Listas</h2>
+    <h3>Listas Ordenadas</h3>
+    <ol type="I">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+
+    <h3>Listas Não Ordenadas</h3>
+    <ul style="list-style-type: square;">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+
+    <h2>Minhas Linguagens Favoritas</h2>
+    <ol>
+        <li>Antigas
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Visual Basic</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+            </ol>
+        </li>
+        <li>Novas
+            <ol type="a">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Kotlin</li>
+            </ol>
+        </li>
+    </ol>
+
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>NES
+            <ul>
+                <li style="list-style-type: square;">Mario Bros</li>
+                <li>
+                    Mario Bros 3
+                    <ul>
+                        <li>Mario: Lost Levels</li>
+                    </ul>
+                </li>
+                <li style="list-style-type: square;">Ninja Gaiden</li>
+            </ul>
+        </li>
+        <li>SNES
+            <ul>
+                <li style="list-style-type: square;">Mario</li>
+                <li style="list-style-type: square;">Donkey Kong</li>
+            </ul>
+        </li>   
+        <li>PlayStation
+            <ul>
+                <li style="list-style-type: square;">Final Fantasy</li>
+                <li style="list-style-type: square;">Castlevania</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
+    <h2>Usando links externos</h2>
+    <p>Você pode acessar o meu <a href="https://github.com/pedrosantos88754/3-sm.git" target="_blank"rel="external">repositório público no GitHub</a>.</p>
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no YouTube</a>.</p>
+    
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a <a href="segunda_pagina.html">minha segunda página</a>.</p>
+    <p>Você também pode acessar a nossa <a href="pagina_de_noticias.html">página de notícias</a>.</p>
+    
+    <h2> LINKS PARA DOWNLOAD</h2>
+    <ul>
+        <li><a href="livro/meulivro.pdf">Baixara livro em pdf</a></li>
+        <li><a href="livro/meulivro.zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+    <h2> IMAGEM DINÂMICA </h2>
+    <p>Tente abrir esse site em vaarios dispositivos diferentes ou simplismente almente e 
+    e diminua a tela do seu navagador.
+    </p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagem_dm/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagem_dm/foto-m.png" type="image/png">
+        <img src="imagem_dm/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p> Vamos Aprender a reproduzir áudios em HTML5</p>
+    <audio src="audio.mp3/kazzom.mp3" controls autoplay></audio>
+
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p> Este video esta hospedado para o meu próprio servidor.</p>
+
+    <video src="vidio hospedado/meu_video.mp4"width="500" controls autoplay></video>
+
+    <h1>Inserindo video do YouTube</h1>
+    <iframe width="560" height="315" src="https://youtube.com/embed/rx8EhkXk9zs" frameborder="0"allowfullscren></iframe>
+
+    <h1>Inserindo videos do vimeo</h1>    
+    <div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/2854365?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:450px;height:315px;" title="Game Animation Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+</head>
+<body>
