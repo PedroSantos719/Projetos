@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Interativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2023/05/27/18/22/planet-8022074_1280.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="decoration decoration-1"></div>
+    <div class="decoration decoration-2"></div>
+    <header>
+        <div class="logo"> <i class="fas fa-globe-americas"></i> <span>Portal Interativo</span> </div> <button
+            class="theme-toggle" id="themeToggle"> <i class="fas fa-moon theme-icon"></i> <span class="toggle-text">Modo
+                Escuro</span> </button>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <div class="card">
+                <h1>Bem-vindo ao Portal</h1>
+                <p>Estamos felizes em tê-lo conosco! Este portal foi desenvolvido com as tecnologias mais recentes para
+                    proporcionar a melhor experiência possível.</p>
+                <p>Explore nosso conteúdo e descubra como podemos ajudá-lo a alcançar seus objetivos. Nossa equipe está
+                    sempre pronta para atender às suas necessidades.</p>
+                <p>O portal se adapta automaticamente ao seu ambiente, alternando entre o modo claro durante o dia e o
+                    modo escuro à noite para maior conforto visual.</p>
+            </div>
+            <div class="card">
+                <h2>Entre em contato</h2>
+                <p>Estamos ansiosos para ouvir você! Preencha o formulário abaixo e entraremos em contato o mais breve
+                    possível. Todos os campos marcados com * são obrigatórios.</p>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group"> <label for="name">Nome *</label>
+                        <div class="input-icon-wrapper"> <i class="fas fa-user input-icon"></i> <input type="text"
+                                id="name" name="name" class="input-with-icon" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    <div class="form-group"> <label for="email">E-mail</label>
+                        <div class="input-icon-wrapper"> <i class="fas fa-envelope input-icon"></i> <input type="email"
+                                id="email" name="email" class="input-with-icon" placeholder="seu.email@exemplo.com">
+                        </div>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="form-group"> <label for="message">Mensagem</label> <textarea id="message" name="message"
+                            placeholder="Digite sua mensagem aqui..."></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div> <button type="submit" id="submitButton" class="btn-submit"> <i
+                            class="fas fa-paper-plane"></i> Enviar mensagem </button>
+                    <div class="success-message" id="successMessage"> <i class="fas fa-check-circle"></i> Mensagem
+                        enviada com sucesso! </div>
+                </form>
+            </div>
+        </div>
+        <footer> © 2025 Portal Interativo. Todos os direitos reservados. </footer>
+    </div>
+    <div class="greeting" id="greeting"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
