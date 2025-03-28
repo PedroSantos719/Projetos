@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">Cv[x]</div>
+        <div class="button-grid">
+            <!-- Existing buttons from the original design -->
+            <button class="button function-button" onclick="handleFunction('M1')">M1</button>
+            <button class="button function-button">0</button>
+            <button class="button function-button" onclick="handleMode('deg')">Deg</button>
+            <button class="button function-button" onclick="handleComplex('a+bi')">a+bi</button>
+            <button class="button function-button" onclick="handleAction('save')">Save</button>
+
+            <button class="button function-button">(</button>
+            <button class="button function-button">)</button>
+            <button class="button function-button" onclick="handleComplex('Re')">Re</button>
+            <button class="button function-button" onclick="handleComplex('Im')">Im</button>
+            <button class="button function-button" onclick="handleAction('load')">Load</button>
+
+            <button class="button function-button" onclick="handleTrigFunction('sinh')">sinh</button>
+            <button class="button function-button" onclick="handleTrigFunction('cosh')">cosh</button>
+            <button class="button function-button" onclick="handleTrigFunction('tanh')">tanh</button>
+            <button class="button function-button" onclick="handleInverseTrigFunction('asinh')">asinh</button>
+            <button class="button function-button" onclick="handleInverseTrigFunction('acosh')">acosh</button>
+
+            <button class="button function-button" onclick="handleInverseTrigFunction('asin')">asin</button>
+            <button class="button function-button" onclick="handleInverseTrigFunction('acos')">acos</button>
+            <button class="button function-button" onclick="handleInverseTrigFunction('atan')">atan</button>
+            <button class="button function-button" onclick="handleInverseTrigFunction('asec')">asec</button>
+            <button class="button function-button" onclick="handleInverseTrigFunction('acsc')">acsc</button>
+
+            <button class="button function-button" onclick="handleTrigFunction('sin')">sin</button>
+            <button class="button function-button" onclick="handleTrigFunction('cos')">cos</button>
+            <button class="button function-button" onclick="handleTrigFunction('tan')">tan</button>
+            <button class="button function-button" onclick="handleTrigFunction('sec')">sec</button>
+            <button class="button function-button" onclick="handleTrigFunction('csc')">csc</button>
+
+            <button class="button function-button" onclick="handleLogarithm('log')">log</button>
+            <button class="button function-button" onclick="handleLogarithm('ln')">ln</button>
+            <button class="button function-button" onclick="handleRoot('sqrt')">√</button>
+            <button class="button function-button" onclick="handleRoot('cbrt')">∛</button>
+            <button class="button function-button" onclick="handleAction('x2')">x²</button>
+
+            <button class="button number-button" onclick="appendToDisplay('i')">i</button>
+            <button class="button number-button" onclick="appendToDisplay('e')">e</button>
+            <button class="button number-button" onclick="appendToDisplay('π')">π</button>
+            <button class="button function-button" onclick="handleAction('x^n')">x^n</button>
+            <button class="button function-button" onclick="handleAction('!')">!</button>
+
+            <button class="button number-button" onclick="appendToDisplay('7')">7</button>
+            <button class="button number-button" onclick="appendToDisplay('8')">8</button>
+            <button class="button number-button" onclick="appendToDisplay('9')">9</button>
+            <button class="button operator-button" onclick="handleAction('DEL')">DEL</button>
+            <button class="button special-button" onclick="handleAction('AC')">AC</button>
+
+            <button class="button number-button" onclick="appendToDisplay('4')">4</button>
+            <button class="button number-button" onclick="appendToDisplay('5')">5</button>
+            <button class="button number-button" onclick="appendToDisplay('6')">6</button>
+            <button class="button operator-button" onclick="appendToDisplay('*')">×</button>
+            <button class="button operator-button" onclick="appendToDisplay('/')">÷</button>
+
+            <button class="button number-button" onclick="appendToDisplay('1')">1</button>
+            <button class="button number-button" onclick="appendToDisplay('2')">2</button>
+            <button class="button number-button" onclick="appendToDisplay('3')">3</button>
+            <button class="button operator-button" onclick="appendToDisplay('+')">+</button>
+            <button class="button operator-button" onclick="appendToDisplay('-')">-</button>
+
+            <button class="button number-button" onclick="appendToDisplay('0')">0</button>
+            <button class="button number-button" onclick="appendToDisplay('.')">.</button>
+            <button class="button number-button" onclick="appendToDisplay('±')">±</button>
+            <button class="button special-button" onclick="handleAction('Exp')">Exp</button>
+            <button class="button special-button" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
